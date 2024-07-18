@@ -2,6 +2,7 @@ import {useEffect} from "react";
 import {useState} from "react";
 import CurrencyDropdown from "./dropdown";
 import {HiArrowsRightLeft} from "react-icons/hi2";
+import darkMode from "./DarkMode";
 
 const CurrencyConverter = () => {
   const [currencies, setCurrencies] = useState([]);
@@ -70,6 +71,7 @@ const CurrencyConverter = () => {
 
   return (
     <div className="max-w-xl mx-auto my-10 p-5 bg-gray-200 rounded-lg shadow-md">
+      <darkMode />
       <h2 className="mb-5 text-2xl font-semibold text-gray-700">
         Currency Converter
       </h2>
